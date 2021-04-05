@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.report_area.CusProduct_AnaSub"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <include layout="@layout/tab_layout"/>
+
+    <LinearLayout
+        android:id="@+id/data_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/textupper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:text="total value"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            />
+        <TextView
+            android:id="@+id/totalValueEnter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="219"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:weightSum="2.01"
+          android:orientation="horizontal"
+          >
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:orientation="vertical"
+              >
+              <TextView
+                  android:id="@+id/textLeft"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/grey"
+                  android:text="total bills"
+                  android:textAlignment="center"
+                  android:textAllCaps="true"
+                  />
+              <TextView
+                  android:id="@+id/totalBillsEntry"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:text="0"
+                  android:textAlignment="center"
+                  android:textColor="@color/black"
+                  android:textSize="20sp" />
+
+          </LinearLayout>
+
+          <View
+              android:layout_weight="0.01"
+              android:background="@color/grey"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+         />
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:orientation="vertical"
+              >
+              <TextView
+                  android:id="@+id/textRight"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/grey"
+                  android:text="total Items"
+                  android:textAlignment="center"
+                  android:textAllCaps="true"
+                  />
+              <TextView
+                  android:id="@+id/totalItemEnter"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:text="0"
+                  android:textAlignment="center"
+                  android:textColor="@color/black"
+                  android:textSize="20sp" />
+          </LinearLayout>
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/summeryRecycler"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

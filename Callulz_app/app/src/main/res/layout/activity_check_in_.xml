@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:focusableInTouchMode="true"
+    tools:context=".Activity.custumer_area.activity.Check_in_Activity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/tab_layout"/>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/noOrder_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:bufferType="normal"
+            android:textColor="@color/black"
+            android:text="No Order"/>
+
+        <RadioButton
+            android:id="@+id/reschedule_rb"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:bufferType="normal"
+            android:textColor="@color/black"
+            android:text="Reschedule"/>
+
+
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:id="@+id/remark_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/remark_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:hint="Enter your remarks"
+            android:padding="10dp"
+            android:background="#00000000"
+            />
+
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/name_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/toolbarRed"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/date_time_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:background="@color/white">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:padding="10dp"
+            android:id="@+id/date_et"
+            android:cursorVisible="false"
+            android:clickable="true"
+            android:focusable="false"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time"
+            android:layout_marginTop="10dp"
+            android:id="@+id/time_et"
+            android:cursorVisible="false"
+            android:clickable="true"
+            android:focusable="false"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:text="update"
+    android:background="@drawable/button_background"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/button_update"
+    />
+
+
+</LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_circular"
+        android:elevation="15dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

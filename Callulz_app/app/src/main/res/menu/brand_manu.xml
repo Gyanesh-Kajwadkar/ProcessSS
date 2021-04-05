@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/All"
+        android:title="All" />
+    <item android:id="@+id/cus_name"
+        android:title="Brand name"
+        app:showAsAction="always"/>
+    <item android:id="@+id/all_itms"
+        android:title="All Items"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/cart_itms"
+        android:title="Cart Items"
+        app:showAsAction="always"/>
+
+    <!--  <item android:id="@+id/cus_mob"
+          android:title="Customer mobile"
+          app:showAsAction="always"/>-->
+</menu>

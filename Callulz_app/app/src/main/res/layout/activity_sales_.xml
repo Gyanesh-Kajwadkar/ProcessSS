@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/background"
+    tools:context=".Activity.custumer_area.activity.Sales_Activity">
+   <include layout="@layout/tab_layout"/>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+    <android.support.design.widget.TabLayout
+        android:padding="3dp"
+        app:tabInlineLabel="true"
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorColor="@color/white"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/TabLayoutStyle"
+        app:tabGravity="fill"
+        android:layout_gravity="center"
+        android:background="@color/toolbarRed" />
+  <TextView
+      android:layout_marginRight="20dp"
+      android:layout_alignParentRight="true"
+      android:elevation="0dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black"
+      android:text="0"
+      android:padding="2dp"
+      android:background="@drawable/round_textview"
+      android:gravity="center"
+      android:id="@+id/cartItemNumber_tv"/>
+ </RelativeLayout>
+
+    <com.andoidproject.culluze_app.Activity.widgets.LockableViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"
+        android:background="@android:color/transparent">
+    </com.andoidproject.culluze_app.Activity.widgets.LockableViewPager>
+
+
+
+</LinearLayout>
