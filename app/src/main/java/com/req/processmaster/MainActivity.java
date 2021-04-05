@@ -54,12 +54,15 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
 
     //requestToReadWrite
     private void requestPermission() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+        {
             requestPermissions(new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_WRITE_PERMISSION);
-        } else {
+        }
+        else
+            {
             // starting new Async Task
             new DownloadFileFromURL(MainActivity.this).execute(file_url);
-        }
+            }
     }
 
     @Override
